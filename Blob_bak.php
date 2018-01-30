@@ -8,7 +8,7 @@ function cmdInfo($text) {
 	}
 	return $text;
 }
-
+// 针对win系统
 function toWinGbk($text) {
 	return iconv('UTF-8', 'GBK', $text);
 }
