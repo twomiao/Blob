@@ -201,9 +201,4 @@ if (empty($argv[2])) {
 }
 
 // ==================== CLI 下执行 ====================
-
-$blob = new Blob();
-$fileName = $argv[1];
-$pos = $argv[2];
-$blob->exec($fileName, $pos);
-
+(new Blob())->exec($argv[1], $argv[2]);
